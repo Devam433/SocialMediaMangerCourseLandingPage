@@ -5,7 +5,23 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      textStrokeWidth: {
+        '1': '1px',
+        '2': '2px',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities, theme }) {
+      const strokes = theme('textStrokeWidth');
+      const utilities = Object.entries(strokes).reduce((acc, [key, value]) => {
+        acc[`.text-stroke-${key}`] = {
+          '-webkit-text-stroke-width': value,
+        };
+        return acc;
+      }, {});
+      addUtilities(utilities);
+    },
+  ],
 }

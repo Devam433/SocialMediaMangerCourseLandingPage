@@ -56,12 +56,12 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="flex items-center mt-8">
+            <div className="ml-5 sm:ml-0  flex items-center mt-8">
               <div className="flex -space-x-3">
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
-                    className="w-10 h-10 rounded-full border-2 border-white overflow-hidden"
+                    className="w-8 sm:w-10 h-10 rounded-full border-2 border-white overflow-hidden"
                   >
                     <img
                       src={`https://i.pravatar.cc/100?img=${i + 10}`}
@@ -90,7 +90,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <Circle className='absolute w-full sm:w-[53%] rounded-br-[70px] rounded-bl-[70px] rounded-tl-[0px] sm:rounded-tl-[0px] rounded-tr-[70px] sm:rounded-tr-[240px] sm:rounded-br-[250px] sm:rounded-bl-[120px] h-[570px] sm:h-[608px] sm:ml-[-10px] sm:mt-[-10px] z-[-10]' data-aos="fade-down"
+          <Circle className=' absolute w-full sm:w-[53%] rounded-br-[70px] rounded-bl-[70px] rounded-tl-[0px] sm:rounded-tl-[0px] rounded-tr-[70px] sm:rounded-tr-[240px] sm:rounded-br-[250px] sm:rounded-bl-[120px] h-[570px] sm:h-[608px] sm:ml-[-10px] sm:mt-[-10px] z-[-10]' data-aos="fade-down"
     //  data-aos-easing="linear"
      data-aos-duration="1000"/>
       <div
@@ -106,7 +106,7 @@ const Hero = () => {
 
         <div
           style={{
-            width: "400px",
+            width: "100%",
             height: "400px",
             position: "absolute",
             top: "60px",
@@ -116,7 +116,7 @@ const Hero = () => {
             background:
               "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(201,113,205,1) 0%, rgba(237,128,196,1) 10%, rgba(237,128,196,1) 21%, rgba(237,128,196,1) 33%, rgba(251,205,171,1) 100%)",
           }}
-          className=' top-[300px] sm:top-[60px]'
+          className='hidden sm:block top-[300px] mt-[30px] h-[200px] sm:h-[400px] sm:top-[60px]'
         ></div>
       </div>
         </div>

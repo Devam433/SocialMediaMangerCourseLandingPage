@@ -1,6 +1,5 @@
 export const navitems = [
   { name: "Home", href: "#home" },
-  { name: "Courses", href: "#courses" },
   { name: "About", href: "#about" },
   { name: "Contact Us", href: "#contactUs" },
 ];

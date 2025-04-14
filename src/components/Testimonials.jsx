@@ -103,7 +103,7 @@ export default function TestimonialsSection() {
                           className="w-12 h-12 rounded-full mr-4 object-cover"
                           loading="lazy"
                         />
-                        <div>
+                        <div className="hidden sm:block">
                           <div className="font-medium text-black">{testimonial.name}</div>
                           <div className="text-sm text-black/60">{testimonial.role}</div>
                           <div className="flex mt-1">
