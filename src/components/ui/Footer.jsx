@@ -66,9 +66,12 @@ const Footer = () => {
           </div>
           <div className="flex flex-col">
             <h3>Follow Us</h3>
-            <div className=" flex flex-col">
-            <a href="#" class="text-white/80 hover:text-selective transition-colors">
+            <div className=" flex gap-2 justify-center">
+            <a href="https://www.instagram.com/smart_skills_academy24?igsh=a2R6cm90OTR6ZWZ0" class="text-white/80 hover:text-selective transition-colors" target="_blank">
               <i className="fab fa-instagram h-5 w-5 text-xl"></i>
+            </a>
+            <a href="https://www.facebook.com/share/16Jyb7gaYY/?mibextid=wwXIfr" class="text-white/80 hover:text-selective transition-colors" target="_blank">
+              <i className="fab fa-facebook h-5 w-5 text-xl"></i>
             </a>
             </div>
           </div>

@@ -20,13 +20,13 @@ function Navbar() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'shadow-lg' : ''
-    } border-b border-blue-950 bg-black opacity-95 text-white shadow-md`}>
+    } border-b border-blue-600 bg-white text-black shadow-md`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Desktop Navigation */}
         <div className="hidden md:flex w-full h-20 justify-between items-center">
           <div className="flex items-center space-x-4">
             {/* <img src="LOGO.png" alt="Smart Skills Academy" className="h-12 w-12 object-contain" /> */}
-            <img src="Logo Full size.png" alt="Smart Skills Academy" className="h-10 object-contain" />
+            <img src="Logo Full size.png" alt="Smart Skills Academy" className="h-12 object-contain" />
             {/* <p className="text-2xl font-bold">Smart Skills Academy</p> */}
           </div>
           
@@ -35,14 +35,14 @@ function Navbar() {
               <a
                 key={index}
                 href={item.href}
-                className="text-white/90 hover:text-white transition-colors duration-200 text-lg font-medium"
+                className="text-black hover:text-black/50 transition-colors duration-200 text-lg font-medium"
               >
                 {item.name}
               </a>
             ))}
           </nav>
           
-          <button className="px-6 py-2.5 bg-white text-blue-950 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-200">
+          <button className="px-6 py-2.5 bg-blue-100 text-blue-950 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-200">
             Enroll Now
           </button>
         </div>
